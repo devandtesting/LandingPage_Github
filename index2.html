@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Link</title>
+    <title>My GitHub Profile</title>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
@@ -26,7 +26,7 @@
         }
 
         .container {
-            margin-top: 150px;
+            margin-top: 150px; /* Adjusted for slightly lower placement */
             max-width: 600px;
             padding: 20px;
             border-radius: 10px;
@@ -57,25 +57,17 @@
         .btn-custom:hover {
             background-color: #0056b3;
         }
-
-        .image-container {
-            margin-top: 115px; 
-            text-align: center; 
-        }
-
-        .image-container img {
-            max-width: 40%; 
-            height: auto;
-        }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
+    <!-- React and ReactDOM -->
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
+    <!-- React App -->
     <script type="text/babel">
         const App = () => {
             const handleClick = () => {
@@ -83,18 +75,12 @@
             };
 
             return (
-                <div>
-                    <div className="container">
-                        <h1>Welcome to My Github</h1>
-                        <p>It includes some examples of automated tests.</p>
-                        <button className="btn btn-custom" onClick={handleClick}>
-                            Visit GitHub
-                        </button>
-                    </div>
-
-                    <div className="image-container">
-                        <img src="istqb.png" alt="Descriptive Alt Text" />
-                    </div>
+                <div className="container">
+                    <h1>Welcome to My Github</h1>
+                    <p>It includes some examples of automated tests.</p>
+                    <button className="btn btn-custom" onClick={handleClick}>
+                        Visit GitHub
+                    </button>
                 </div>
             );
         };
